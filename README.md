@@ -19,3 +19,11 @@ The page is built by `lecture/build_lecture_pack.py` in the ai-ethics-history pr
 `lecture/pre2010_ai_ethics_history.html`, `What_this_timeline_cannot_show.txt`, `data/out/ancestors.json` and
 `reading/ancestor_claims.csv`. Run `python3 lecture/build_lecture_pack.py`, then copy
 `lecture/ai_ethics_history_1950_2025.html` here as `index.html`. It opens from disk and needs no network.
+
+## Companion: Field Memory in AI Ethics
+`field-memory/` holds a companion site, linked from the masthead. It shows which venue groups in AI ethics remember which works of computer ethics (2015–2025), and how four canonical claims travel through later papers.
+Live: https://goto4711.github.io/ai-ethics-histories/field-memory/
+
+The site shows aggregates only; no codes for individual papers are published. The counts come from a draft article and may change.
+
+Rebuild with `python3 claimmap/src/build_site.py --public` in the ai-ethics-history project, then copy `claimmap/public/field-memory/` here as `field-memory/`. The page is self-contained apart from `fig1_nissenbaum_routes.png`.
