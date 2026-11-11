@@ -27,6 +27,8 @@ button { font: inherit; color: inherit; }
 .masthead h1 { margin: 0; font-size: 1.3rem; font-weight: 600; }
 .masthead .frame { margin: 0; color: var(--ink-2); font-size: .95rem; font-style: italic; font-family: var(--italic); }
 .masthead .hint { margin-left: auto; color: var(--ink-3); font-size: .78rem; white-space: nowrap; }
+.masthead .companion { color: var(--ink-2); font-size: .85rem; text-underline-offset: 2px; }
+.masthead .companion:hover { color: var(--ink); }
 .tabs { display: flex; padding: 0 2.2rem; border-bottom: 1px solid var(--rule); overflow-x: auto; }
 .tab { border: 0; background: none; padding: .62rem 0 .5rem; margin-right: 1.9rem; cursor: pointer; white-space: nowrap; color: var(--ink-3); font-size: 1rem; border-bottom: 2px solid transparent; }
 .tab .n { font-variant-caps: all-small-caps; letter-spacing: .06em; margin-right: .4rem; }
@@ -164,7 +166,7 @@ td.date { white-space: nowrap; }
   @page { size: A4 landscape; margin: 11mm; }
   body { overflow: visible; font-size: 10pt; }
   .app { display: block; height: auto; }
-  .tabs, .controls, #tip, .record, .masthead .hint { display: none !important; }
+  .tabs, .controls, #tip, .record, .masthead .hint, .masthead .companion { display: none !important; }
   .panel, .panel[hidden] { display: block !important; overflow: visible; break-after: page; padding: 0 0 4mm; height: auto; }
   .lanes, .note-frame, .entries { overflow: visible; height: auto; }
   .questions, .contin { height: auto; }
@@ -209,6 +211,7 @@ td.date { white-space: nowrap; }
   <header class="masthead">
     <h1>A plural history of AI ethics, 1950–2025</h1>
     <p class="frame">This is a selective map of retrospective connections, not a linear genealogy and not a ranking of founders.</p>
+    <a class="companion" href="field-memory/">Companion site: Field Memory in AI Ethics →</a>
     <span class="hint">Keys 1–7 switch tabs · hover or focus a name for more</span>
     <span class="print-only print-url" id="print-url"></span>
   </header>
